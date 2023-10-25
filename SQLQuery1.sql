@@ -1,3 +1,11 @@
 
 
-exec dbo.spTestPerson_GetByLastName'Smith'
+--exec dbo.spTestPerson_GetByLastName'Smith'
+
+--SELECT @@SERVERNAME;
+
+--DBCC CHECKIDENT('Prizes', RESEED, 2);
+
+select * from dbo.Prizes
+
+

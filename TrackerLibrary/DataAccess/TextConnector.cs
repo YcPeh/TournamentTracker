@@ -1,6 +1,8 @@
-﻿namespace TrackerLibrary
+﻿using TrackerLibrary.Models;
+
+namespace TrackerLibrary.DataAccess
 {
-    internal class TextConnection : IDataConnection
+    internal class TextConnector : IDataConnection
     {
         // TODO - Wire up the CreatePrize for text files
         public PrizeModel CreatePrize(PrizeModel model)
