@@ -6,6 +6,8 @@
 
 --DBCC CHECKIDENT('Prizes', RESEED, 2);
 
-select * from dbo.Prizes
+--select * from dbo.Prizes
+
+select * from dbo.People
 
 
