@@ -8,6 +8,8 @@
 
 --select * from dbo.Prizes
 
-select * from dbo.People
+--select * from dbo.People
+
+exec dbo.spPeople_GetAll
 
 
