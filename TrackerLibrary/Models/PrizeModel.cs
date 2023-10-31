@@ -5,10 +5,6 @@
     /// </summary>
     public class PrizeModel
     {
-        public PrizeModel()
-        {
-        }
-
         /// <summary>
         /// the unique identifier for the prize
         /// </summary>
@@ -31,10 +27,7 @@
         /// (so 0.5 for 50%)
         /// </summary>
         public double PrizePercentage { get; set; }
-        //public PrizeModel()
-        //{
 
-        //}
 
         public PrizeModel(string placeName, string placeNumber, string prizeAmount, string prizePercentage)
         {
