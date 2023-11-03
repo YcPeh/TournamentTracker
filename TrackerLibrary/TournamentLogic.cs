@@ -35,6 +35,10 @@ namespace TrackerLibrary
             {
                 foreach (MatchupModel match in previousRound)
                 {
+                    if (currMatchup.Entries == null)
+                    {
+                        currMatchup.Entries = new List<MatchupEntryModel>();
+                    }
                     currMatchup.Entries.Add(new MatchupEntryModel { ParentMatchup = match });
 
                     if (currMatchup.Entries.Count > 1)
@@ -60,6 +64,10 @@ namespace TrackerLibrary
 
             foreach (TeamModel team in teams)
             {
+                if (curr.Entries == null)
+                {
+                    curr.Entries = new List<MatchupEntryModel>();
+                }
                 curr.Entries.Add(new MatchupEntryModel { TeamCompeting = team });
 
                 if (byes > 0 || curr.Entries.Count > 1)
